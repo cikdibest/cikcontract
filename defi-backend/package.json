@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.13.5",
+    "express": "^5.1.0",
+    "prisma": "^6.6.0",
+    "reflect-metadata": "^0.2.2"
+  }
+}
