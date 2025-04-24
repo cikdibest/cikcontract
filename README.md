@@ -26,7 +26,7 @@ This project consists of three main components:
 ### Clone and Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/defi-project.git
+git clone https://github.com/cikdibest/defi-project.git
 cd defi-project
 
 # Install backend dependencies
