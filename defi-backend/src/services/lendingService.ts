@@ -71,7 +71,7 @@ export class LendingService {
   data: {
     correlationId,
     walletAddress: await signer.getAddress(),
-    txHash: null, // ✅ zincire yazılmadığı için null
+    txHash: "N/A", // ✅ zincire yazılmadığı için null
     amount: formatEther(debt),
     type: "getDebt",
     version,
