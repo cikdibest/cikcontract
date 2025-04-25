@@ -38,7 +38,7 @@ model TransactionLog {
   id            String   @id @default(uuid())
   correlationId String
   walletAddress String
-  txHash        String   @unique
+  txHash        String?   
   amount        Decimal
   type          String   // yerine enum, artık serbest string
   version       String   // v1, v2, v3 yerine serbest string

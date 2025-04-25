@@ -67,17 +67,17 @@ export class LendingService {
     const { contract, signer } = getContract(version);
     const debt = await contract.getDebt();
 
-    await prisma.transactionLog.create({
-      data: {
-        correlationId,
-        walletAddress: await signer.getAddress(),
-        txHash: "N/A",
-        amount: formatEther(debt),
-        type: "getDebt",
-        version,
-        isSuccess: true,
-      },
-    });
+   await prisma.transactionLog.create({
+  data: {
+    correlationId,
+    walletAddress: await signer.getAddress(),
+    txHash: null, // ✅ zincire yazılmadığı için null
+    amount: formatEther(debt),
+    type: "getDebt",
+    version,
+    isSuccess: true,
+  },
+});
 
     return { debt: formatEther(debt) };
   }
